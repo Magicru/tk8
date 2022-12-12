@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongodb-server:
+    image: mongo:6.0.3
+    restart: always
+    volumes:
+      - ./mongoData:/data/db
+    ports:
+      - 27016:27017
+  node-app:
+    build: .
+    ports:
+      - 33722:8080
+    depends_on:
+      - mongodb-server

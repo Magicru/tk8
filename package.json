@@ -1,0 +1,30 @@
+{
+  "name": "task8",
+  "version": "1.0.0",
+  "description": "```bash\r docker pull Magicru/task-5:Magicru\r docker run -p 33722:8080 Magicru/task-5:Magicru\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha api.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magicru/task-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Magicru/task-5/issues"
+  },
+  "homepage": "https://github.com/Magicru/task-5#readme",
+  "dependencies": {
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "chai-match": "^1.1.1",
+    "mocha": "^10.1.0"
+  }
+}
